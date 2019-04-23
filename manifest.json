@@ -1,0 +1,300 @@
+{
+    "places":{
+        "entry" : {
+            "name": "entry",
+            "image": null,
+            "video": "assets/video/ambulance.mp4",
+            "videoRotation": 270,
+            "interactions": [
+                {
+                    "kind": "navigationIcon",
+                    "icon": "navigation",
+                    "payload" : {
+                        "position": {"x": 2, "y": -6, "z": 4},
+                        "title" : "hotside1",
+                        "place" : "hotside1",
+                        "image" : "assets/images/forensics.jpg",
+                        "iconRotation" : 220
+                    }
+                },
+                {
+                    "kind": "navigationIcon",
+                    "icon": "navigation",
+                    "payload" : {
+                        "position": {"x": 3, "y": -6, "z": -6},
+                        "title" : "coldside1",
+                        "place" : "coldside1",
+                        "image" : "assets/images/forensics.jpg",
+                        "iconRotation" : 330
+                    }
+                }
+            ]
+        },
+        "hotside1" : {
+            "image": null,
+            "video": "assets/video/defibrillator.mp4",
+            "videoRotation": 270,
+            "name": "hotside1",
+            "interactions": [
+                {
+                    "kind": "navigationIcon",
+                    "icon": "navigation",
+                    "payload" : {
+                        "position": {"x": -3, "y": -6, "z": 6},
+                        "title" : "entry",
+                        "place" : "entry",
+                        "image" : "assets/images/forensics.jpg",
+                        "iconRotation" : 0
+                    }
+                },
+                {
+                    "kind": "hotspot",
+                    "icon": "hotspot",
+                    "payload" : {
+                        "position": {"x": 10, "y": 1, "z": -3},
+                        "title" : "testHotspot",
+                        "hotspotType" : "text",
+                        "hotspotScale" : 2,
+                        "hotspotText" : "This is a door handle.",
+                        "hotspotRotation" : {"x": 0, "y": 300, "z": 0},
+                        "textboxRotation" : {"x": 0, "y": 300, "z": 0}
+                    }
+                },
+                {
+                    "kind": "hotspot",
+                    "icon": "hotspot",
+                    "payload" : {
+                        "position": {"x": 0, "y": 0, "z": 10},
+                        "title" : "testHotspot2",
+                        "hotspotType" : "text",
+                        "hotspotScale" : 1,
+                        "hotspotText" : "This text box looks at me. Also, this is a dummy!",
+                        "hotspotRotation" : "look-at",
+                        "textboxRotation" : "look-at"
+                    }
+                },
+                {
+                    "kind": "hotspot",
+                    "icon": "hotspot",
+                    "payload" : {
+                        "position": {"x": -2.5, "y": 0, "z": 6},
+                        "title" : "dummyHotspot",
+                        "hotspotType" : "image",
+                        "hotspotScale" : 0.5,
+                        "hotspotImage" : "dummy",
+                        "hotspotRotation" : "look-at",
+                        "imageRotation" : "look-at",
+                        "imageScale" : 5
+                    }
+                },
+                {
+                    "kind": "hotspot",
+                    "icon": "hotspot",
+                    "payload" : {
+                        "position": {"x": -6, "y": 3, "z": 5},
+                        "title" : "skeletonHotspot",
+                        "hotspotType" : "image",
+                        "hotspotScale" : 0.1,
+                        "hotspotImage" : "skeleton",
+                        "hotspotRotation" : "look-at",
+                        "imageRotation" : "look-at",
+                        "imageScale" : 1.5
+                    }
+                },
+                {
+                    "kind": "hotspot",
+                    "icon": "hotspot",
+                    "payload" : {
+                        "position": {"x": 1.5, "y": 4, "z": -8.5},
+                        "title" : "electricHotspot",
+                        "hotspotType" : "image",
+                        "hotspotScale" : 0.25,
+                        "hotspotImage" : "electric",
+                        "hotspotRotation" : "look-at",
+                        "imageRotation" : "look-at",
+                        "imageScale" : 2
+                    }
+                }
+            ]
+        },
+        "coldside1" :
+        {
+            "image": null,
+            "video": "assets/video/lobby.mp4",
+            "videoRotation": 270,
+            "name": "coldside1",
+            "interactions": [
+                {
+                    "kind": "navigationIcon",
+                    "icon": "navigation",
+                    "payload" : {
+                        "position": {"x": -3, "y": -6, "z": 6},
+                        "title" : "entry",
+                        "place" : "entry",
+                        "image" : "assets/images/forensics.jpg",
+                        "iconRotation" : 0
+                    }
+                },
+                {
+                    "kind": "hotspot",
+                    "icon": "hotspot",
+                    "payload" : {
+                        "position": {"x": 0.10, "y": 3.7, "z": -5},
+                        "title" : "thiccHotspot",
+                        "hotspotType" : "image",
+                        "hotspotScale" : 0.3,
+                        "hotspotImage" : "thicc",
+                        "hotspotRotation" : "look-at",
+                        "imageRotation" : "look-at",
+                        "imageScale" : 3
+                    }
+                },
+                {
+                    "kind": "hotspot",
+                    "icon": "soundHotspot",
+                    "payload" : {
+                        "position": {"x": 5, "y": 2, "z": -3},
+                        "title" : "chord",
+                        "hotspotType" : "audio",
+                        "hotspotScale" : 1,
+                        "hotspotAudio" : "cchord",
+                        "hotspotImage" : "soundClip",
+                        "hotspotRotation" : "look-at",
+                        "imageRotation" : "look-at",
+                        "imageScale" : 1
+                    }
+                },
+                {
+                    "kind": "hotspot",
+                    "icon": "soundHotspot",
+                    "payload" : {
+                        "position": {"x": -2, "y": 2, "z": -4},
+                        "title" : "cicadas",
+                        "hotspotType" : "audio",
+                        "hotspotScale" : 1,
+                        "hotspotAudio" : "cicadas",
+                        "hotspotImage" : "soundClip",
+                        "hotspotRotation" : "look-at",
+                        "imageRotation" : "look-at",
+                        "imageScale" : 1
+                    }
+                },
+                {
+                    "kind": "hotspot",
+                    "icon": "hotspot",
+                    "payload" : {
+                        "position": {"x": -2, "y": 5, "z": -4},
+                        "title" : "horse",
+                        "hotspotType" : "video",
+                        "hotspotScale" : 1,
+                        "hotspotVideo" : "horse",
+                        "hotspotRotation" : "look-at",
+                        "imageRotation" : "look-at"
+                    }
+                },
+                {
+                    "kind": "hotspot",
+                    "icon": "hotspot",
+                    "payload" : {
+                        "position": {"x": -6, "y": 5, "z": -4},
+                        "title" : "coffee",
+                        "hotspotType" : "video",
+                        "hotspotScale" : 1,
+                        "hotspotVideo" : "coffee",
+                        "hotspotRotation" : "look-at",
+                        "imageRotation" : "look-at"
+                    }
+                }
+            ]
+        }
+
+    },
+    "startPlace": "entry",
+    "icons": 
+    {
+        "navigationIcon": 
+        {
+            "name" : "navigation",
+            "image": "assets/images/icons/HomeIconRound.png" 
+        },
+        "hotspotIcon": 
+        {
+            "name" : "hotspot",
+            "image": "assets/images/icons/hotspot.png" 
+        },
+        "soundHotspot": 
+        {
+            "name" : "soundHotspot",
+            "image": "assets/images/icons/soundhotspot.png" 
+        } 
+    },
+    "hotspotImages":
+    {
+        "dummy":
+        {
+            "name" : "dummy",
+            "image" : "assets/images/hotspots/Dummy.png"
+        },
+        "skeleton":
+        {
+            "name" : "skeleton",
+            "image" : "assets/images/hotspots/skeleton.png"
+        },
+        "electric":
+        {
+            "name" : "electric",
+            "image" : "assets/images/hotspots/electric.png"
+        },
+        "thicc":
+        {
+            "name" : "thicc",
+            "image" : "assets/images/hotspots/thicchotspot.png"
+        },
+        "soundClip":
+        {
+            "name" : "soundClip",
+            "image" : "assets/images/hotspots/soundClip.png"
+        }
+    },
+    "hotspotVideos":
+    {
+        "horse":
+        {
+            "name" : "horse",
+            "video" : "assets/video/horse.mp4"
+        },
+        "coffee":
+        {
+            "name" : "coffee",
+            "video" : "assets/video/coffee.mp4"
+        }
+    },
+    "hotspotAudio":
+    {
+        "cchord":
+        {
+            "name" : "cchord",
+            "audio" : "assets/audio/cChord.mp3"
+        },
+        "cicadas":
+        {
+            "name" : "cicadas",
+            "audio" : "assets/audio/cicadas.mp3"
+        }
+    },
+    "otherImages":
+    {
+        "welcomeImage":
+        {
+            "name": "welcomeImage",
+            "image": "assets/images/welcomemessage.png"
+        },
+        "welcomeButton":
+        {
+            "name": "welcomeButton",
+            "image": "assets/images/welcomebutton.png"
+        }
+    }
+}
+
+
